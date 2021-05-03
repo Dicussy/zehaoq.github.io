@@ -17,6 +17,12 @@
             <a-asset-item id="city-asset" src="models/scene.gltf"></a-asset-item>
         </a-assets>
 
+        <a-assets>
+            <a-asset-item id="fruit-obj" src="models/fruit.obj"></a-asset-item>
+            <a-asset-item id="fruit-mtl" src="models/fruit.mtl"></a-asset-item>
+        </a-assets>
+
+
         <a-marker id="city-marker" type='barcode' value='7'>
             <a-entity animation-mixer
                       gltf-model="#city-asset"
@@ -28,6 +34,10 @@
                       gltf-model="#animated-asset"
                       scale="2 2 2">
             </a-entity>
+        </a-marker>
+
+        <a-marker id="fruit-marker" preset='hiro'>
+            <a-entity obj-model="obj: #fruit-obj; mtl: #fruit-mtl"></a-entity>
         </a-marker>
 
 
